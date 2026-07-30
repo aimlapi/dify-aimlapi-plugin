@@ -22,7 +22,7 @@ https://api.aimlapi.com/v1
 
 ## Included models
 
-Version 0.0.2 includes a generated snapshot of every model exposed as
+Version 0.0.4 includes a generated snapshot of every model exposed as
 `openai/chat-completions` by the aimlapi.com catalog. Models marked as hottest
 appear first; the rest follow in stable model-ID order. Pricing is the base
 inference tier reported by the catalog when the snapshot is generated.
@@ -46,3 +46,11 @@ user still confirms it through the normal Save action.
 No custom aimlapi.com callback page is required. On Dify versions without the
 hook, the same URL remains a regular key-management link and the key can be
 pasted manually.
+
+The v0.0.4 staging package requires the companion Dify core branch for browser
+key return and the in-form low-balance checkout prompt:
+
+https://github.com/aimlapi/dify/tree/d1m7asis/model-provider-oauth-callback
+
+The current package intentionally points its onboarding link to the AIMLAPI
+staging environment and must not be published to the production Marketplace.
