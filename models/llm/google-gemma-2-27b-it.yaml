@@ -1,0 +1,35 @@
+model: "google/gemma-2-27b-it"
+label:
+  en_US: "Gemma 2 27B"
+model_type: llm
+features:
+  - agent-thought
+  - tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - vision
+  - document
+model_properties:
+  mode: chat
+  context_size: 8192
+parameter_rules:
+  - name: temperature
+    use_template: temperature
+  - name: top_p
+    use_template: top_p
+  - name: presence_penalty
+    use_template: presence_penalty
+  - name: frequency_penalty
+    use_template: frequency_penalty
+  - name: max_tokens
+    use_template: max_tokens
+    default: 2048
+    min: 1
+    max: 2048
+  - name: response_format
+    use_template: response_format
+pricing:
+  input: "0.845"
+  output: "0.845"
+  unit: "0.000001"
+  currency: USD
