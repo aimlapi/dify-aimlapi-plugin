@@ -1,4 +1,4 @@
-version: 0.0.4
+version: 0.0.5
 type: plugin
 author: aimlapi
 name: aimlapi
@@ -14,11 +14,12 @@ resource:
     model:
       enabled: true
       llm: true
+      text_embedding: true
 plugins:
   models:
     - provider/aimlapi.yaml
 meta:
-  version: 0.0.4
+  version: 0.0.5
   arch:
     - amd64
     - arm64

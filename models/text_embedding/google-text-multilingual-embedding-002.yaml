@@ -1,0 +1,12 @@
+model: "google/text-multilingual-embedding-002"
+label:
+  en_US: "Text Multilingual Embedding 002"
+model_type: text-embedding
+model_properties:
+  context_size: 2000
+  max_chunks: 32
+pricing:
+  input: "0.0325"
+  output: "0"
+  unit: "0.000001"
+  currency: USD

@@ -1,0 +1,12 @@
+model: "anthropic/voyage-large-2-instruct"
+label:
+  en_US: "Voyage Large 2 Instruct"
+model_type: text-embedding
+model_properties:
+  context_size: 16000
+  max_chunks: 32
+pricing:
+  input: "0.156"
+  output: "0"
+  unit: "0.000001"
+  currency: USD

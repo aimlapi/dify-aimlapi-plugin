@@ -1,0 +1,12 @@
+model: "alibaba/text-embedding-v3"
+label:
+  en_US: "Qwen Text Embedding v3"
+model_type: text-embedding
+model_properties:
+  context_size: 8192
+  max_chunks: 32
+pricing:
+  input: "0.091"
+  output: "0"
+  unit: "0.000001"
+  currency: USD

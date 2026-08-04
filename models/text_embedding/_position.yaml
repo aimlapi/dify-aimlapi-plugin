@@ -1,0 +1,15 @@
+- openai/text-embedding-3-small
+- openai/text-embedding-3-large
+- openai/text-embedding-ada-002
+- anthropic/voyage-multilingual-2
+- anthropic/voyage-large-2-instruct
+- anthropic/voyage-large-2
+- anthropic/voyage-finance-2
+- anthropic/voyage-law-2
+- anthropic/voyage-code-2
+- anthropic/voyage-2
+- google/text-multilingual-embedding-002
+- alibaba/text-embedding-v4
+- alibaba/text-embedding-v3
+- alibaba/qwen-text-embedding-v4
+- alibaba/qwen-text-embedding-v3
