@@ -4,7 +4,7 @@ label:
 model_type: text-embedding
 model_properties:
   context_size: 8192
-  max_chunks: 32
+  max_chunks: 10
 pricing:
   input: "0.091"
   output: "0"
