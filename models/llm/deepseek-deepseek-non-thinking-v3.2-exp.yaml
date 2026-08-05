@@ -1,6 +1,6 @@
 model: "deepseek/deepseek-non-thinking-v3.2-exp"
 label:
-  en_US: "DeepSeek V3.2 Exp"
+  en_US: "DeepSeek V3.2 Exp (Non-Thinking)"
 model_type: llm
 features:
   - agent-thought

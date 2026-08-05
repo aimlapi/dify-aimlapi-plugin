@@ -1,6 +1,6 @@
 model: "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
 label:
-  en_US: "Qwen3 Coder"
+  en_US: "Qwen3 Coder 480B A35B (FP8)"
 model_type: llm
 features:
   - agent-thought

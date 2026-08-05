@@ -1,6 +1,6 @@
 model: "mistral/labs-leanstral-1-5"
 label:
-  en_US: "Leanstral 1.5"
+  en_US: "Leanstral 1.5 (Labs)"
 model_type: llm
 features:
   - agent-thought

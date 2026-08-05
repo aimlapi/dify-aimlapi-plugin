@@ -1,6 +1,6 @@
 model: "bytedance/seed-2-0-mini"
 label:
-  en_US: "Dola-Seed 2.0 Mini"
+  en_US: "Seed 2.0 Mini"
 model_type: llm
 features:
   - agent-thought

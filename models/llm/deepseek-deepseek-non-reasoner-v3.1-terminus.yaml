@@ -1,6 +1,6 @@
 model: "deepseek/deepseek-non-reasoner-v3.1-terminus"
 label:
-  en_US: "DeepSeek V3.1"
+  en_US: "DeepSeek V3.1 Terminus (Non-Reasoner)"
 model_type: llm
 features:
   - agent-thought
