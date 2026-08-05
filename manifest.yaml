@@ -1,11 +1,11 @@
-version: 0.0.7
+version: 0.0.8
 type: plugin
 author: aimlapi
 name: aimlapi
 label:
   en_US: aimlapi.com
 description:
-  en_US: Access OpenAI-compatible chat models from multiple providers through aimlapi.com.
+  en_US: "Access 1,000+ AI models: text, image, video, audio and embeddings - through a single API key. One-click setup"
 icon: icon.svg
 privacy: PRIVACY.md
 resource:
@@ -19,7 +19,7 @@ plugins:
   models:
     - provider/aimlapi.yaml
 meta:
-  version: 0.0.7
+  version: 0.0.8
   arch:
     - amd64
     - arm64
