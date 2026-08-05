@@ -1,6 +1,6 @@
 model: "alibaba/glm-5.2-fast-preview"
 label:
-  en_US: "GLM 5.2 Fast Preview"
+  en_US: "GLM 5.2 Fast Preview (Alibaba)"
 model_type: llm
 features:
   - agent-thought

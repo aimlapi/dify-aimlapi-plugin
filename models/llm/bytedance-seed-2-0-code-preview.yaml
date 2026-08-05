@@ -1,6 +1,6 @@
 model: "bytedance/seed-2-0-code-preview"
 label:
-  en_US: "Dola-Seed 2.0 Code"
+  en_US: "Seed 2.0 Code Preview"
 model_type: llm
 features:
   - agent-thought

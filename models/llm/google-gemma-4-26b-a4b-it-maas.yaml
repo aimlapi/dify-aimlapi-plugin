@@ -1,6 +1,6 @@
 model: "google/gemma-4-26b-a4b-it-maas"
 label:
-  en_US: "Gemma 4 26B A4B IT"
+  en_US: "Gemma 4 26B A4B IT (MaaS)"
 model_type: llm
 features:
   - agent-thought

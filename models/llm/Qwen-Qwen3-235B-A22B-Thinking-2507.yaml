@@ -1,6 +1,6 @@
 model: "Qwen/Qwen3-235B-A22B-Thinking-2507"
 label:
-  en_US: "Qwen3 Next 80B A3B Thinking"
+  en_US: "Qwen3 235B A22B Thinking"
 model_type: llm
 features:
   - agent-thought

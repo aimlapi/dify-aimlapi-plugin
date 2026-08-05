@@ -1,6 +1,6 @@
 model: "alibaba/glm-5.2"
 label:
-  en_US: "GLM 5.2"
+  en_US: "GLM 5.2 (Alibaba)"
 model_type: llm
 features:
   - agent-thought
