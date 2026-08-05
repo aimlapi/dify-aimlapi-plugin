@@ -2,7 +2,7 @@ provider: aimlapi
 label:
   en_US: aimlapi.com
 description:
-  en_US: OpenAI-compatible access to multiple model families through aimlapi.com.
+  en_US: "Access 1,000+ AI models: text, image, video, audio and embeddings - through a single API key. One-click setup"
 icon_small:
   en_US: icon.svg
 icon_large:
