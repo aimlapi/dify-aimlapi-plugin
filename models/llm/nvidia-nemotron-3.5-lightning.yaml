@@ -1,17 +1,16 @@
-model: "openai/o4-mini-deep-research"
+model: "nvidia/nemotron-3.5-lightning"
 label:
-  en_US: "o4 Mini Deep Research"
+  en_US: "Nemotron 3.5 Lightning"
 model_type: llm
 features:
   - agent-thought
   - tool-call
   - multi-tool-call
   - stream-tool-call
-  - vision
   - document
 model_properties:
   mode: chat
-  context_size: 200000
+  context_size: 1000000
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -25,11 +24,11 @@ parameter_rules:
     use_template: max_tokens
     default: 4096
     min: 1
-    max: 100000
+    max: 65536
   - name: response_format
     use_template: response_format
 pricing:
-  input: "2.6"
-  output: "10.4"
+  input: "0"
+  output: "0"
   unit: "0.000001"
   currency: USD

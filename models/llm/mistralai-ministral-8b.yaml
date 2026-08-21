@@ -1,17 +1,10 @@
-model: "openai/gpt-5-codex"
+model: "mistralai/ministral-8b"
 label:
-  en_US: "GPT-5 Codex"
+  en_US: "Ministral 8B"
 model_type: llm
-features:
-  - agent-thought
-  - tool-call
-  - multi-tool-call
-  - stream-tool-call
-  - vision
-  - document
 model_properties:
   mode: chat
-  context_size: 400000
+  context_size: 128000
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -25,11 +18,11 @@ parameter_rules:
     use_template: max_tokens
     default: 4096
     min: 1
-    max: 128000
+    max: 16384
   - name: response_format
     use_template: response_format
 pricing:
-  input: "1.625"
-  output: "13"
+  input: "0.143"
+  output: "0.143"
   unit: "0.000001"
   currency: USD

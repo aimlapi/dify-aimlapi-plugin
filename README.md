@@ -22,7 +22,7 @@ https://api.aimlapi.com/v1
 
 ## Included models
 
-Version 0.0.4 includes a generated snapshot of every model exposed as
+Version 0.0.9 includes a generated snapshot of every model exposed as
 `openai/chat-completions` by the aimlapi.com catalog. Models marked as hottest
 appear first; the rest follow in stable model-ID order. Pricing is the base
 inference tier reported by the catalog when the snapshot is generated.
@@ -31,7 +31,8 @@ Run `uv run python scripts/sync_models.py` before a future catalog release to
 refresh the checked-in YAML files from
 `GET https://api.aimlapi.com/models?include=capabilities,pricing`.
 
-Embeddings, audio, video, and image generation remain out of scope.
+Text embeddings are included as a separate model type. Audio, video, and
+image generation remain out of scope.
 
 ## Optional device authorization
 
@@ -43,14 +44,19 @@ Grant server-side, open the standard aimlapi.com consent page, and poll for the
 generated key. Dify then inserts the key into the declared secret field; the
 user still confirms it through the normal Save action.
 
-No custom aimlapi.com callback page is required. On Dify versions without the
-hook, the same URL remains a regular key-management link and the key can be
-pasted manually.
+No custom aimlapi.com callback page is required.
 
-The v0.0.4 staging package requires the companion Dify core branch for browser
-key return and the in-form low-balance checkout prompt:
+`dify_device_authorization` is an aimlapi.com proposal that no released Dify
+version implements yet, so on every Dify build available today the help URL
+behaves as a plain key-management link and the key is pasted manually. Nothing
+about the provider depends on the hook landing.
+
+Browser key return and the in-form low-balance checkout prompt additionally
+require the companion Dify core branch, which is not merged upstream:
 
 https://github.com/aimlapi/dify/tree/d1m7asis/model-provider-oauth-callback
 
-The current package intentionally points its onboarding link to the AIMLAPI
-staging environment and must not be published to the production Marketplace.
+This package points at production aimlapi.com endpoints and is the one intended
+for the Marketplace. To test against staging, override the endpoints at runtime
+(`AIMLAPI_INFERENCE_URL`, `AIMLAPI_APP_URL`, `AIMLAPI_PAY_URL`) instead of
+editing the checked-in URLs.
