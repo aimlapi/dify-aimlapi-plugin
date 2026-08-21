@@ -1,6 +1,6 @@
-model: "mistralai/devstral-2512"
+model: "meta/muse-spark-1.2"
 label:
-  en_US: "Devstral 2 2512"
+  en_US: "Muse Spark 1.2"
 model_type: llm
 features:
   - agent-thought
@@ -11,7 +11,7 @@ features:
   - document
 model_properties:
   mode: chat
-  context_size: 262144
+  context_size: 1048576
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -29,7 +29,7 @@ parameter_rules:
   - name: response_format
     use_template: response_format
 pricing:
-  input: "0.52"
-  output: "2.6"
+  input: "1.625"
+  output: "5.525"
   unit: "0.000001"
   currency: USD

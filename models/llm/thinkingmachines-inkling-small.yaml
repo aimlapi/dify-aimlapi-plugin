@@ -1,17 +1,13 @@
-model: "openai/gpt-5.6-luna"
+model: "thinkingmachines/inkling-small"
 label:
-  en_US: "GPT-5.6 Luna"
+  en_US: "Inkling Small"
 model_type: llm
 features:
-  - agent-thought
-  - tool-call
-  - multi-tool-call
-  - stream-tool-call
   - vision
   - document
 model_properties:
   mode: chat
-  context_size: 1050000
+  context_size: 524288
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -25,11 +21,9 @@ parameter_rules:
     use_template: max_tokens
     default: 4096
     min: 1
-    max: 128000
-  - name: response_format
-    use_template: response_format
+    max: 262144
 pricing:
-  input: "0.26"
-  output: "1.56"
+  input: "0.754"
+  output: "1.872"
   unit: "0.000001"
   currency: USD

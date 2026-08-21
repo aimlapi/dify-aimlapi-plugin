@@ -12,7 +12,7 @@ help:
   title:
     en_US: Get your API key from aimlapi.com
   url:
-    en_US: https://staging.aimlapi.com/app/keys?dify_device_authorization=api_key&dify_authorization_name=aimlapi.com%20API%20key
+    en_US: https://aimlapi.com/app/keys?dify_device_authorization=api_key&dify_authorization_name=aimlapi.com%20API%20key
 supported_model_types:
   - llm
   - text-embedding
