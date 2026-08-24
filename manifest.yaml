@@ -8,6 +8,8 @@ description:
   en_US: "Access 1,000+ AI models: text, image, video, audio and embeddings - through a single API key. One-click setup"
 icon: icon.svg
 privacy: PRIVACY.md
+repo: https://github.com/aimlapi/dify-aimlapi-plugin
+contact: dev@aimlapi.com
 resource:
   memory: 1048576
   permission:
